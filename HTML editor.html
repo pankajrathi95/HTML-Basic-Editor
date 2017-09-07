@@ -1,0 +1,28 @@
+<!-- 
+Author : Pankaj Rathi.
+Created on : 9th september 2017.
+-->
+<!DOCTYPE html>
+<html> 
+    <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script>
+                   
+                    $(document).ready(function(){
+                        $("button").click(function(){         
+                            var txt = $('#txt1').val();
+                            $("iframe").attr("srcdoc",txt);
+                        });
+                    });
+                    </script>
+    </head>   
+    <div id="box">
+        <textarea id="txt1" placeholder="your HTML code here" rows="33" cols="100"></textarea>
+        
+        <iframe width="50%" height="50%"></iframe><br><br>
+        <div>
+        <button>Run</button>
+        </div>
+    </div>  
+    
+</html>
